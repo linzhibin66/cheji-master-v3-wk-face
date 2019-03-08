@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/green"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:text="模拟路考"
+            android:id="@+id/tv_title"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:id="@+id/layout_back"
+            android:background="@drawable/bg_click_green"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/left_white"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="操作指南"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_16"
+                    android:background="@drawable/shape1"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.开启近光灯"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.变换成远光灯"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.变换成近光灯"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.先变换成远光灯再变回近光灯（在路上经常会看到这样使用灯光）"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.开启雾灯+警示灯"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.关闭所有灯光"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注：新手若不熟悉灯光，提前主动请教教练比较好！"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扣分标准"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_16"
+                    android:background="@drawable/shape1"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="以下情况不合格"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.不能正确使用灯光。"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.同方向近距离跟车，使用远光灯。"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.通过急弯、拱桥、人行横道、坡路、没有交通信号灯控制的路口，不交替使用远近光灯示意。"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.不会按规定使用灯光。"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.超车时，未变换使用远近灯光提醒被超车辆注意。"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.路口转弯，使用远光灯。"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.在有路灯的道路，使用远光灯。"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8.对低能见度道路判断情况差。"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9.未按指令操作。"
+                    android:textSize="@dimen/textsize_14"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/play"
+                android:id="@+id/image_play"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="播放"
+                android:id="@+id/tv_play_state"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/textsize_18"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

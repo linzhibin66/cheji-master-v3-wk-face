@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.dgcheshang.cheji"
+        minSdkVersion 22
+        targetSdkVersion 22
+        versionCode 3
+        versionName "3.8"
+        multiDexEnabled true
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi-v7a' //, 'x86', '', 'x86_64', 'arm64-v8a'
+        }
+
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'src/main/libs'
+            jni.srcDirs = []
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+    }
+
+}
+repositories
+        {
+            flatDir
+                    {
+                        dirs 'libs'
+                    }
+        }
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation files('src/main/libs/gson-2.2.4.jar')
+    implementation files('src/main/libs/netty-all-4.1.8.Final.jar')
+    implementation files('src/main/libs/commons-lang3-3.2.jar')
+    implementation files('src/main/libs/BASE64.jar')
+    implementation files('src/main/jniLibs/Volley.jar')
+    implementation files('libs/cw-deviceapi(20170718).jar')
+    implementation('com.serenegiant:common:1.1.9') {
+        exclude module: 'support-v4'
+    }
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'org.aspectj:aspectjrt:1.8.7'
+    implementation 'commons-io:commons-io:2.4'
+    implementation project(':winterlog')
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.3'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation project(':cameralib1')
+    implementation project(':mz200alib')
+}

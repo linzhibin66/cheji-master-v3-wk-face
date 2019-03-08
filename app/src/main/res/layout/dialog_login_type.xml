@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/shape3">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/login_fingerprint_layout"
+                android:background="@drawable/bg_click_orange">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@mipmap/login_fingerprint_n"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="指纹登录"
+                    android:textSize="@dimen/textsize_16"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/login_face_layout"
+                android:background="@drawable/bg_click_green"
+                >
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@mipmap/logintype_face"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人脸识别"
+                    android:textSize="@dimen/textsize_16"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
